@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sus rpg</title>
+        <script src="/assets/js/object sheets/CharacterSheet.js"></script>
+        <script src="/assets/js/object sheets/equipmentList.js"></script>
+        <script src="/assets/js/object sheets/SkillSheet.js"></script>  
+        <script src="/assets/js/object sheets/PlayerInventoryItemList.js"></script>
+        <script src="/assets/js/skills/SkillCode.js"></script>
+        <script src="/assets/js/map generation/mapgen.js"></script>
+        <script src="/assets/js/movement/movement.js"></script>
+        <script src="/assets/js/movement/pathfinding.js"></script>
+        <script src="/assets/js/Turn systems/TurnSystem.js"></script>
+        <script src="/assets/js/ai/BasicMeleeAi.js"></script>
+        <script src="/assets/js/skills/basicAttack.js"></script>
+        <script src="/assets/js/ui/playerHpMpBar.js"></script>
+        <script src="/assets/js/animations/AnimateActions.js"></script>
+        <script src="/assets/js/ui/skillSelections.js"></script>
+        <script src="/assets/js/skills/skillDamageCalc.js"></script>
+        <script src="/assets/js/ui/enemyStatInfo.js"></script>
+        <script src="/assets/js/ui/combatUi.js"></script>
+        
+        
+        
+        <link href="/assets/css/mapstyles.css" rel="stylesheet">
+
+    </head>
+<body>
+    
+   <div id='GameScreen' class='GameScreen'>
+       <div class = 'battlemapContainer'>
+        
+    
+            <div id='battlemap' class='battlemap'></div>
+            <img src = '/assets/images/background.png' class='background'>
+            
+        </div>
+        <div id = 'gamecontrolls' class = 'gamecontrolls'>
+            <button id ='moveButton'>Move</button>
+            <button id ='attackButton'>Attack</button>
+            <button id ='skillSelectionButton'>Skills</button>
+            <button id ='nextTurnButton'>End turn</button>
+            <button id ='inventoryButton'>Inventory</button>
+        </div>
+    
+
+        <div  class = 'playerHpMpBar'>
+            <div id = 'playerCurrentHpBar' class = 'playerCurrentHpBar'></div>
+            <div id = 'playerHpBarNumber' class = 'playerHpMpBarNumber'></div>
+        </div>
+        <div class = 'playerHpMpBar'>
+            <div id = 'playerCurrentMpBar' class = 'playerCurrentMpBar'></div>
+            <div id = 'playerMpBarNumber' class = 'playerHpMpBarNumber'></div> 
+        </div>
+        <div class = 'playerHpMpBar'>
+            <div id = 'playerCurrentActionPoints' class = 'playerCurrentActionPoints'></div>
+            <div id = 'playerActionPointsNumber' class = 'playerHpMpBarNumber'></div>
+        </div>
+
+     
+   </div>
+   
+
+
+</body>
+</html>
